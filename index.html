@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hello World DApp</title>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+</head>
+<body class="container">
+  <h1><center>Crime Killer Application</center></h1>
+  <div class="table-responsive">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>Crimes</th>
+          <th>Votes</th>
+          <th>Unvote</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>crime1</td>
+          <td id="candidate-1" ></td>
+          <td id="c-1" ></td>
+        </tr>
+        <tr>
+          <td>Crime2</td>
+          <td id="candidate-2"></td>
+          <td id="c-2" ></td>
+        </tr>
+        <tr>
+          <td>Crime3</td>
+          <td id="candidate-3"></td>
+          <td id="c-3"></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <input type="text" id="candidate" />
+  <a href="#" onclick="voteForCandidate()" class="btn btn-primary">Vote</a>
+  <input type="text" id="ucandidate" />
+  <a href="#" onclick="UnvoteForCandidate()" class="btn btn-primary">UnVote</a>
+</body>
+<script src="https://cdn.rawgit.com/ethereum/web3.js/develop/dist/web3.js"></script>
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+<script src="./index.js"></script>
+<script src="./index1.js"></script>
+</html>
